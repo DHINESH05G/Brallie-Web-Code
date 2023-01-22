@@ -1,0 +1,24 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.bo{
+    
+    align-items: center;
+    text-align: center;
+}
+.top{
+    margin: 100px;
+    font-size: larger;
+    align-items: center;
+    text-align: center;
+}
+#center{
+    margin: 125px;
+    align-items: center;
+    text-align: center;
+}
+#paperCanvas{
+    background-color: aliceblue;
+
+}

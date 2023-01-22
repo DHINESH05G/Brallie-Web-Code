@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8" /> 
+  <head>
+    <title>Braille Code</title>
+    <!-- <script src="https://code.jquery.com/jquery-2.1.4.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.2/paper-full.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.1/dat.gui.min.js"></script> -->
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="paper-full.min.js"></script>
+    <script src="dat.gui.min.js"></script>
+    <!-- <script src="StreamSaver.js"></script> -->
+    <!-- <script src="polyfill.min.js"></script> -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script>var languages = {}</script>
+    <script src="braille6.js"></script>
+    <script src="braille8old.js"></script>
+    <script src="braille8new.js"></script>
+
+    <script src="script1.js"></script>
+  </head>
+
+  <body style="background-color:rgb(240, 240, 229);display: block;">
+    
+    <h1>⠃⠊ Braille It </h1>
+    
+    <p>Braille is a project to write braille on paper.</p>
+    <a href="say-it-master/index1.html"><button style="background-color:blue;">Speech</button></a>
+    <a href="image-to-text/index.html"><button style="background-color:blue;">Image</button></a>
+    <div id="textareas">
+      <textarea id='latin' placeholder="Typing.....😊"></textarea>
+      <div id="gui"></div>
+    </div>
+    <img src="say-it-master/img1/illustration-2.jpg" style="margin-top: -100px;margin-left: 85%; width: 10em;height: 10em;" class="img-responsive" alt="Happy humans celebrating Nigeria">
+    <div id="output">
+      <canvas id="paperCanvas" resize hdpi ></canvas>
+      <div id="gcode-container" ><textarea id="gcode" ></textarea></div>
+      <div>Print size: <span id="print-size">--</span></div>
+    </div>
+    <div id="info" >
+          <div style="display: inline-block;" id="pos-container" ><textarea id="dotposition"></textarea></div>
+		  <div style="display: inline-block;" id="optimize-container"><textarea id="optimizedgcode"></textarea></div>
+    </div>
+  </body>
+</html>
